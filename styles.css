@@ -9,63 +9,83 @@ body {
     margin: 0;
 }
 
-/* Navbar container */
+/* navbar */
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
     padding: 10px 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-}
-
-/* Logo section */
-.navbar-logo {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-section {
     display: flex;
     align-items: center;
-}
-
-.navbar-logo img {
+  }
+  
+  .logo-img {
+    width: 40px;
     height: 40px;
     margin-right: 10px;
-}
-
-.navbar-logo span {
+  }
+  
+  .logo-text {
     font-size: 24px;
     font-weight: bold;
-}
-
-/* Navigation links */
-.navbar-links {
+    color: #000;
+    margin: 0;
+  }
+  
+  .nav-links {
     display: flex;
-    gap: 20px;
-}
-
-.navbar-links a {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-link {
     text-decoration: none;
     font-size: 16px;
-    color: #333;
+    font-weight: bold;
+    margin: 0 10px;
     transition: color 0.3s;
-}
-
-.navbar-links a:hover {
-    color: #007BFF;
-}
-
-/* Contact button */
-.navbar-contact {
-    padding: 10px 20px;
-    background-color: #FFA500;
-    color: white;
+  }
+  
+  .nav-link.orange {
+    color: orange;
+  }
+  
+  .nav-link.blue {
+    color: blue;
+  }
+  
+  .nav-link.cyan {
+    color: cyan;
+  }
+  
+  .nav-link.purple {
+    color: purple;
+  }
+  
+  .nav-link:hover {
+    opacity: 0.8;
+  }
+  
+  .contact-button {
     text-decoration: none;
-    font-size: 16px;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
     border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
     transition: background-color 0.3s;
-}
-
-.navbar-contact:hover {
-    background-color: #e69500;
-}
+  }
+  
+  .contact-button:hover {
+    background-color: darkorange;
+  }
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -156,6 +176,8 @@ body {
 
 /* Curriculum Section */
 .curriculum-section {
+    background: url(assets/bg.png);
+    background-repeat: no-repeat;
     text-align: center;
     width: 90%;
     max-width: 1200px;
