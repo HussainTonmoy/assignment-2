@@ -17,91 +17,74 @@ body {
     background-color: #ffffff;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .logo-section {
+}
+
+.logo-section {
     display: flex;
     align-items: center;
-  }
-  
-  .logo-img {
+}
+
+.logo-img {
     width: 40px;
     height: 40px;
     margin-right: 10px;
-  }
-  
-  .logo-text {
+}
+
+.logo-text {
     font-size: 24px;
     font-weight: bold;
     color: #000;
     margin: 0;
-  }
-  
-  .nav-links {
+}
+
+.nav-links {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .nav-link {
+}
+
+.nav-link {
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
     margin: 0 10px;
     transition: color 0.3s;
-  }
-  
-  .nav-link.orange {
+}
+
+.nav-link.orange {
     color: orange;
-  }
-  
-  .nav-link.blue {
-    color: blue;
-  }
-  
-  .nav-link.cyan {
+}
+
+.nav-link.blue {
+    color: rgba(0, 0, 255, 0.521);
+}
+
+.nav-link.cyan {
     color: cyan;
-  }
-  
-  .nav-link.purple {
-    color: purple;
-  }
-  
-  .nav-link:hover {
+}
+
+.nav-link.purple {
+    color: rgba(128, 0, 128, 0.685);
+}
+
+.nav-link:hover {
     opacity: 0.8;
-  }
-  
-  .contact-button {
+}
+
+.contact-button {
     text-decoration: none;
     background-color: orange;
     color: white;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 16px;
     font-weight: bold;
     transition: background-color 0.3s;
-  }
-  
-  .contact-button:hover {
-    background-color: darkorange;
-  }
+}
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar-links {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .navbar-contact {
-        margin-top: 10px;
-    }
+.contact-button:hover {
+    background-color: #ff8c00;
 }
 
 /* Hero Section */
@@ -140,7 +123,7 @@ body {
     font-size: 1.1em;
     line-height: 1.6;
     margin: 0 0 20px 0;
-    color: #555;
+    color: black;
 }
 
 .text-content .btn {
@@ -150,7 +133,7 @@ body {
     color: #fff;
     text-decoration: none;
     font-size: 1em;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .image-content {
@@ -186,7 +169,7 @@ body {
 .curriculum-section h1 {
     font-size: 2.5em;
     margin-bottom: 30px;
-    color: #333;
+    color:black;
 }
 
 .cards-container {
@@ -215,12 +198,12 @@ body {
 .card h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #333;
+    color: black;
 }
 
 .card p {
     font-size: 1em;
-    color: #666;
+    color: black;
     margin-bottom: 20px;
 }
 
@@ -262,16 +245,18 @@ body {
 }
 
 /* Stories Section */
-.container {
+.stories-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
 h1 {
+    font-size: 2.5em;
+    font-weight: bolder;
     text-align: center;
     margin-bottom: 40px;
-    color: #222;
+    color: black;
 }
 
 .stories-grid {
@@ -319,7 +304,7 @@ h1 {
 
 .story-description {
     font-size: 14px;
-    color: #555;
+    color: black;
 }
 
 .view-all {
@@ -333,7 +318,7 @@ h1 {
     color: #fff;
     background-color: #222;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .view-all a:hover {
@@ -345,45 +330,36 @@ h1 {
     background-color: #00aaff;
     color: white;
     padding: 40px 20px;
-}
-
-.footer-container {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
-.footer-section {
+.footer-column {
     flex: 1;
-    margin: 0 10px;
+    margin: 0 20px;
+    min-width: 200px;
 }
 
-.logo-section {
-    max-width: 300px;
-}
-
-.logo {
+.footer-logo {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.logo-img {
-    width: 50px;
+.footer-logo img {
     height: 50px;
     margin-right: 10px;
 }
 
-.description {
-    font-size: 14px;
-    line-height: 1.6;
+.footer-logo h3 {
+    margin: 0;
+    font-size: 24px;
 }
 
-.about-section h3,
-.social-section h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
+.footer-description {
+    font-size: 14px;
+    line-height: 1.6;
 }
 
 .footer-links {
@@ -392,17 +368,17 @@ h1 {
 }
 
 .footer-links li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .footer-links a {
-    color: white;
     text-decoration: none;
-    font-size: 14px;
+    color: white;
+    transition: color 0.3s;
 }
 
 .footer-links a:hover {
-    text-decoration: underline;
+    color: #ffdd00;
 }
 
 .social-icons {
@@ -433,3 +409,31 @@ h1 {
 .google {
     background: url('assets/google+.png') no-repeat center/cover;
 }
+
+
+ /* Responsive */
+ @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .hero-section {
+      flex-direction: column;
+    }
+
+    .hero-section .text-content,
+    .hero-section .image-content {
+      max-width: 100%;
+    }
+
+    .curriculum-section,
+    .stories-grid {
+      padding: 20px;
+    }
+
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
